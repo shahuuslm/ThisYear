@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 
-const ProfileCard = () => {
+const ProfileCard = ({name, occupation, bio}) => {
     return (
         <div className="flex justify-center">
             <div className="flex justify-center mt-10 bg-amber-100 shadow-lg shadow-amber-950 rounded-lg">
@@ -11,11 +11,11 @@ const ProfileCard = () => {
                     </div>
                     <div className="flex mx-6 mt-2 gap-6">
                         <div className=" ">
-                            <h1 className="font-bold text-amber-950">Shahriyar Islam Monir</h1>
-                            <p className="font-medium text-amber-950">Web Developer</p>
+                            <h1 className="font-bold text-amber-950">{name}</h1>
+                            <p className="font-medium text-amber-950">{occupation}</p>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <p className="font-extralight text-amber-950 leading-5">I believe Keys of keyboard are love of life.</p>
+                            <p className="font-extralight text-amber-950 leading-5">{bio}</p>
                             <Button text={"Follow"}></Button>
                         </div>
                     </div>

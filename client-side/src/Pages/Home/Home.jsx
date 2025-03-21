@@ -3,9 +3,9 @@ import ProfileCard from "../../Components/ProfileCard/ProfileCard";
 const Home = () => {
     return (
         <div>
-            <ProfileCard></ProfileCard>
+            <ProfileCard name={"Shahriyar Islam Monir"} occupation={"Web Developer"} bio={"I believe Keys of keyboard are love of life."}></ProfileCard>
         </div>
-        
+
     );
 };
 
