@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 const ProfileCard = () => {
     return (
@@ -15,7 +16,7 @@ const ProfileCard = () => {
                         </div>
                         <div className="flex flex-col gap-1">
                             <p className="font-extralight text-amber-950 leading-5">I believe Keys of keyboard are love of life.</p>
-                            <button className="font-medium text-amber-100 bg-amber-950 px-2 py-1 rounded-sm ">Follow</button>
+                            <Button text={"Follow"}></Button>
                         </div>
                     </div>
                 </div>
