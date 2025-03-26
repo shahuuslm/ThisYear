@@ -14,9 +14,7 @@ const Banner = ({ title, description }) => {
                         </div>
                     </div>
                 </div>
-                
             </div>
-
         </div>
     );
 };
