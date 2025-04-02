@@ -4,7 +4,12 @@ import IconCard from "../../Components/IconCard/IconCard";
 import { FaEarthAsia } from "react-icons/fa6";
 import { FaTruckPlane } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
-
+import Footer from "../../Shared/Footer/Footer";
+import { MdAddIcCall } from "react-icons/md";
+import { FaFacebook } from "react-icons/fa";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaYoutube } from "react-icons/fa";
 
 const Home = () => {
     return (
@@ -39,19 +44,22 @@ const Home = () => {
             </span>
             {/* Why Choose Us? */}
             <span>
-                <div class=" flex flex-col justify-center items-center mt-4">
-                    <div class="-ml-20">
+                <div class=" flex flex-col justify-center items-center mt-4 mx-12">
+                    <div class="md:-ml-20">
                         <IconCard icon={<FaEarthAsia />} title={'Best Prices'} description={'"We offer the most competitive prices on travel packages worldwide."'}></IconCard>
                     </div>
-                    <div class="ml-60">
+                    <div class="md:ml-60">
                         <IconCard icon={<FaTruckPlane />} title={'Amazing Destinations'} description={'"Explore breathtaking locations with our expert-planned tours."'}></IconCard>
                     </div>
-                    <div class="-ml-16">
+                    <div class="md:-ml-16">
                         <IconCard icon={<IoCall />} title={'24/7 Support'} description={'"Our travel agents are available anytime to assist you."'}></IconCard>
                     </div>
-
-
-
+                </div>
+            </span>
+            {/* Footer Section */}
+            <span>
+                <div class="mt-12">
+                    <Footer title={'Travel Agency'} number={'+880 1619-911231'} mail={'travelagency@gmail.com'} callIcon={<MdAddIcCall />} fbIcon={<FaFacebook />} mailIcon={<MdOutlineAlternateEmail />} instaIcon={<RiInstagramFill />} youtubeIcon={<FaYoutube />}></Footer>
                 </div>
             </span>
 
