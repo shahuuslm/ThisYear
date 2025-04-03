@@ -10,6 +10,7 @@ import { FaFacebook } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
+import ReviewCard from "../../Components/Review Card/ReviewCard";
 
 const Home = () => {
     return (
@@ -54,6 +55,14 @@ const Home = () => {
                     <div class="md:-ml-16">
                         <IconCard icon={<IoCall />} title={'24/7 Support'} description={'"Our travel agents are available anytime to assist you."'}></IconCard>
                     </div>
+                </div>
+            </span>
+            {/* Customer Review */}
+            <span>
+                <div class="flex flex-col md:flex-row  justify-center items-center md:gap-6 md:mx-12">
+                    <ReviewCard review={'"Amazing service! My trip was perfectly planned, and everything went smoothly. Highly recommended!"'} name={'-Rahim Ahmed'}></ReviewCard>
+                    <ReviewCard review={'"A hassle-free and enjoyable experience! The team was super helpful in arranging my dream vacation."'} name={'-Sarah Karim'}></ReviewCard>
+                    <ReviewCard review={'"Great deals and excellent customer support! I had the best trip, thanks to their expert planning."'} name={'-Jamil Hossain'}></ReviewCard>
                 </div>
             </span>
             {/* Footer Section */}
